@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.1.0](https://github.com/joshuaavalon/eslint-config-react/compare/v11.0.0...v11.1.0) (2026-05-31)
+
+
+### Features
+
+* Update dependencies ([a47cda6](https://github.com/joshuaavalon/eslint-config-react/commit/a47cda63ca8d3a6aab17decae081a842344dbc51))
+
 ## [11.0.0](https://github.com/joshuaavalon/eslint-config-react/compare/v10.0.0...v11.0.0) (2026-05-31)
 
 
