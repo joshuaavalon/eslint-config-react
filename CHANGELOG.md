@@ -1,5 +1,16 @@
 # Changelog
 
+## [11.0.0](https://github.com/joshuaavalon/eslint-config-react/compare/v10.0.0...v11.0.0) (2026-05-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* Migrate to new repository
+
+### Features
+
+* Migrate to new repository ([74bfab9](https://github.com/joshuaavalon/eslint-config-react/commit/74bfab9df1823cfaf6a65b2ba5b47c8001727f98))
+
 ## [10.0.0](https://github.com/joshuaavalon/eslint-config/compare/eslint-config-react-v9.1.4...eslint-config-react-v10.0.0) (2025-10-17)
 
 
