@@ -41,8 +41,9 @@
     "@joshuaavalon/eslint-config-typescript": "^11.1.0",
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint-plugin-perfectionist": "^5.9.0",
-    "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.1.1"
+    "eslint-plugin-react-dom": "^5.8.7",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-x": "^5.8.7"
   },
   "devDependencies": {
     "@eslint/core": "^1.2.1",
