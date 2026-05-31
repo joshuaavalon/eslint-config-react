@@ -1,8 +1,10 @@
+import stylisticPlugin from "@stylistic/eslint-plugin";
+import { defineConfig } from "eslint/config";
 import type { PrefixRules } from "@joshuaavalon/eslint-config-javascript/utils";
 import type { UnprefixedRuleOptions } from "@stylistic/eslint-plugin";
 
 
-export const stylisticRules: Pick<PrefixRules<UnprefixedRuleOptions, "@stylistic/">, `@stylistic/jsx-${string}` & keyof PrefixRules<UnprefixedRuleOptions, "@stylistic/">> = {
+const rules: Pick<PrefixRules<UnprefixedRuleOptions, "@stylistic/">, `@stylistic/jsx-${string}` & keyof PrefixRules<UnprefixedRuleOptions, "@stylistic/">> = {
   "@stylistic/jsx-child-element-spacing": ["error"],
   "@stylistic/jsx-closing-bracket-location": ["error"],
   "@stylistic/jsx-closing-tag-location": ["error"],
@@ -44,3 +46,11 @@ export const stylisticRules: Pick<PrefixRules<UnprefixedRuleOptions, "@stylistic
     }
   ]
 };
+
+const config = defineConfig({
+  name: "@joshuaavalon/eslint-config-react/stylistic",
+  plugins: { "@stylistic": stylisticPlugin },
+  rules
+});
+
+export default config;

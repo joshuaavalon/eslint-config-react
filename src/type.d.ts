@@ -1,5 +1,12 @@
-declare module "eslint-plugin-react-hooks" {
-  import type { Linter } from "eslint";
+import type { Linter } from "eslint";
 
-  export const configs: Record<string, Linter.Config>;
+declare module "eslint-plugin-react-hooks" {
+  export const configs: {
+    recommended: Linter.Config,
+    'recommended-latest': Linter.Config,
+    flat: {
+      recommended: Linter.Config,
+      'recommended-latest': Linter.Config
+    }
+  };
 }

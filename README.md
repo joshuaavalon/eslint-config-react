@@ -1,5 +1,7 @@
 # @joshuaavalon/eslint-config-react
 
+[![NPM Version](https://img.shields.io/npm/v/%40joshuaavalon%2Feslint-config-react)](https://www.npmjs.com/package/@joshuaavalon/eslint-config-react)
+
 This is the opinionated ESLint configuration repository that used by myself.
 Not support is guaranteed. Use as your own risk.
 
