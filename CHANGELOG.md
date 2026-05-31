@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.1.2](https://github.com/joshuaavalon/eslint-config-react/compare/v11.1.1...v11.1.2) (2026-05-31)
+
+
+### Bug Fixes
+
+* Remove deprecated rules ([77fe889](https://github.com/joshuaavalon/eslint-config-react/commit/77fe88977fc2d1eb1ab27547990fab33d02683af))
+
 ## [11.1.1](https://github.com/joshuaavalon/eslint-config-react/compare/v11.1.0...v11.1.1) (2026-05-31)
 
 
