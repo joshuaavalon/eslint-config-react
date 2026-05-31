@@ -16,27 +16,37 @@ npm i -D eslint @joshuaavalon/eslint-config-react
 ```
 
 ```js
-import globals from "globals";
-import typescript from "typescript-eslint";
+import jsConfig from "@joshuaavalon/eslint-config-javascript";
 import reactConfig from "@joshuaavalon/eslint-config-react";
+import tsConfig from "@joshuaavalon/eslint-config-typescript";
+import { defineConfig, globalIgnores } from "eslint/config";
+import globals from "globals";
 
-{
-  ...reactRules,
-  ignores: ["node_modules", "dist"],
-  files: ["**/*.ts", "**/*.tsx"],
-  settings: { react: { version: "detect" } },
-  languageOptions: {
-    parser: typescript.parser,
-    parserOptions: {
-      projectService: true,
-      tsconfigDirName: import.meta.dirname,
-      ecmaFeatures: { jsx: true }
+export default defineConfig([
+  globalIgnores(["**/node_modules", "**/dist"], "Ignore Default Files"),
+  {
+    extends: [jsConfig],
+    files: ["**/*.js", "**/*.mjs", "**/*.cjs"],
+    languageOptions: { globals: { ...globals.node } },
+    name: "JavaScript Config"
+  },
+  {
+    extends: [tsConfig],
+    files: ["**/*.ts"],
+    languageOptions: { globals: { ...globals.node } },
+    name: "TypeScript Config"
+  },
+  {
+    extends: [reactConfig],
+    files: ["**/*.tsx"],
+    languageOptions: {
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser
+      }
     },
-    globals: {
-      ...globals.node,
-      ...globals.browser,
-      ...globals.nodeBuiltin
-    }
+    name: "React Config"
   }
-}
+]);
+
 ```
