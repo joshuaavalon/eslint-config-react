@@ -1,5 +1,12 @@
 # Changelog
 
+## [11.1.1](https://github.com/joshuaavalon/eslint-config-react/compare/v11.1.0...v11.1.1) (2026-05-31)
+
+
+### Bug Fixes
+
+* Use eslint-plugin-react-x and eslint-plugin-react-dom instead of eslint-plugin-react ([a4642df](https://github.com/joshuaavalon/eslint-config-react/commit/a4642dfa97cea4ce3259648f8aeea53cf3c309a8))
+
 ## [11.1.0](https://github.com/joshuaavalon/eslint-config-react/compare/v11.0.0...v11.1.0) (2026-05-31)
 
 
